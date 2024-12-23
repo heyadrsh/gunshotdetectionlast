@@ -1,14 +1,16 @@
-# Dataset files
-dataset/
-dataset_metadata.json
-
-# Processed data
-dataset/processed/
-*.h5
+# Dataset files but keep folders
+dataset/**/*.wav
+dataset/**/*.mp3
+dataset/**/*.json
+dataset/processed/**/*.h5
+!dataset/.gitkeep
+!dataset/processed/.gitkeep
+!dataset/gunshots/.gitkeep
+!dataset/urbansound8k/.gitkeep
 
 # Model checkpoints
-checkpoints/
-*.keras
+checkpoints/**/*.keras
+!checkpoints/.gitkeep
 
 # Python cache files
 __pycache__/
@@ -24,7 +26,8 @@ env/
 .idea/
 
 # Detected gunshots directory
-detected_gunshots/
+detected_gunshots/**/*.wav
+!detected_gunshots/.gitkeep
 
 # Logs
-*.log 
+*.log
