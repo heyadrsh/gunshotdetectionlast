@@ -1,0 +1,30 @@
+# Dataset files
+dataset/
+dataset_metadata.json
+
+# Processed data
+dataset/processed/
+*.h5
+
+# Model checkpoints
+checkpoints/
+*.keras
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Detected gunshots directory
+detected_gunshots/
+
+# Logs
+*.log 
